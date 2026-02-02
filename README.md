@@ -13,38 +13,23 @@ Buat dulu SG yang sesuai, ijinkan inbound rule port 22 dan 80 dari anywhere-IPv4
 
 ### A. Buat RDS
 
-Buka RDS and Aurora
-
-Klik Create Database
-
-
-Choose a database creation method : Full Configuration
-Engine type : MySQL
-
-Templates : Sandbox
-
-Availability and durability : otomatis terpilih Single-AZ DB instance deployment (1 instance)
-
-
-DB instance identifier : database-1
-
-Master username : (admin) boleh diganti
-
-Credentials management : Self managed
-
-Master password : (P4ssw0rd) boleh diganti
+1. Buka Aurora and RDS
+2. Klik create database
+3. Choose a database creation method : Full Configuration
+4. Engine type : MySQL
+5. Templates : Sandbox
+6. Availability and durability : otomatis terpilih Single-AZ DB instance deployment (1 instance)
+7. DB instance identifier : database-1
+8. Master username : (admin) boleh diganti
+9. Credentials management : Self managed
+10. Master password : (P4ssw0rd) boleh diganti
 Confirm master password : (P4ssw0rd) boleh diganti
 
 
-Public access : No, kalau butuh diakses dari luar buat jadi Yes
-
-
-VPC security group (firewall) : Choose existing, pilih yang ijinkan inbound 3306
-
-Klik Create Database
-
-Status
-Creating
+11. Public access : No, kalau butuh diakses dari luar buat jadi Yes
+12. VPC security group (firewall) : Choose existing, pilih yang ijinkan inbound 3306
+13. Klik create database
+14. Tunggu sampai mendapatkan End Point
 
 
 ### B. Membuat Instance EC2

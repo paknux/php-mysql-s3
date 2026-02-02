@@ -12,10 +12,10 @@ $s3 = new S3Client([
 ]);
 
 // --- 2. KONFIGURASI DATABASE ---
-$db_host = 'localhost';
-$db_user = 'root';      
-$db_pass = '';          
-$db_name = 'smk_cloud_db'; 
+$db_host = 'database-2.ccqnofwkwmzs.us-east-1.rds.amazonaws.com';
+$db_user = 'admin';      
+$db_pass = 'P4ssw0rd';          
+$db_name = 'db1'; 
 
 // Koneksi awal ke MySQL
 $conn = new mysqli($db_host, $db_user, $db_pass);

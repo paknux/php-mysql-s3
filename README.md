@@ -105,18 +105,20 @@ cp * /var/www/html
 
 
 ## Sesuikan config.php
-```
+
 edit file config.php di /var/www/html
 
+```
 cd /var/www/html
 nano config.php
+```
 
 sesuaikan 
 
+```
 $db_host = ''; // ISI DENGAN ENDPOINT RDS ANDA
 $db_user = 'admin';      
 $db_pass = 'P4ssw0rd';   
-
 ```
 
 

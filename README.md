@@ -116,9 +116,13 @@ nano config.php
 sesuaikan 
 
 ```
-$db_host = ''; // ISI DENGAN ENDPOINT RDS ANDA
-$db_user = 'admin';      
-$db_pass = 'P4ssw0rd';   
+
+$bucket = 'nugwebphps3'; // GANTI DENGAN NAMA BUCKET ANDA
+
+
+$db_host = '';           // ISI DENGAN ENDPOINT RDS ANDA
+$db_user = 'admin';      // GANTI DENGAN USER RDS ANDA
+$db_pass = 'P4ssw0rd';   // GANTI DENGAN PASSWORD RDS ANDA
 ```
 
 
